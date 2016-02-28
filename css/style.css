@@ -8,13 +8,35 @@
 	vertical-align:baseline
 	font-family:Meiryo,メイリオ;
 }
+@font-face {
+	font-family: "mf";
+	src: url(../sc.ttf);
+}
+body{
+	width:100%;
+}
 
 header{
 	background:#427ae3;
-	height:400px;
 	overflow:hidden;
+	color:white;
+	position:relative;
 }
 header img{
-	width:400px;
+	width:20%;
+	left:5%;
+	bottom:-30%;;
 	height:auto;
+	position:absolute;
+}
+header h1{
+	font-family: "mf";
+	padding:10% 0 0 30%;
+	font-size:4rem;
+}
+header h2{
+	padding:0 0 0 30%;
+	margin-bottom:10%;
+	font-size:3rem;
+	font-weight:800;
 }
