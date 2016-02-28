@@ -15,17 +15,32 @@
 body{
 	width:100%;
 }
+.logo{
+	position:relative;
+}
+#logo{
+	display:block;
+	position:absolute;
+	right:0px;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	margin:auto auto;
+	z-index:100;
+	width:10%;
+	min-width:100px;
+}
 .inner{
 	max-width:1200px;
 	margin:0 auto;
 	position:relative;
+	overflow:hidden;
 	height:100%;
 }
 header{
 	background:#427ae3;
-	overflow:hidden;
 	color:white;
-	
+	position:relative;
 }
 header img{
 	width:20%;
