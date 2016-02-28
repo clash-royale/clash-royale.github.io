@@ -15,12 +15,17 @@
 body{
 	width:100%;
 }
-
+.inner{
+	max-width:1200px;
+	margin:0 auto;
+	position:relative;
+	height:100%;
+}
 header{
 	background:#427ae3;
 	overflow:hidden;
 	color:white;
-	position:relative;
+	
 }
 header img{
 	width:20%;
