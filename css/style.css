@@ -28,7 +28,7 @@ body{
 	margin:auto auto;
 	z-index:100;
 	width:10%;
-	min-width:100px;
+	max-width:232px;
 }
 .inner{
 	max-width:1200px;
