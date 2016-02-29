@@ -1,4 +1,5 @@
-﻿html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+@charset "utf-8";
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
 {
 	margin:0;
 	padding:0;
@@ -6,8 +7,11 @@
 	font:inherit;
 	font-size:100%;
 	vertical-align:baseline
-	font-family:Meiryo,メイリオ;
+	font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+	line-height:1.4rem;
+	list-style:none;
 }
+
 @font-face {
 	font-family: "mf";
 	src: url(../sc.ttf);
@@ -15,10 +19,20 @@
 body{
 	width:100%;
 }
+.rare{
+	background:#f37314;
+}
+.epic{
+	background:#c61ee5;
+}
+.common{
+	background:#000;
+}
 .logo{
 	position:relative;
+	display:block;
 }
-#logo{
+.logo img{
 	display:block;
 	position:absolute;
 	right:0px;
@@ -28,7 +42,7 @@ body{
 	margin:auto auto;
 	z-index:100;
 	width:10%;
-	max-width:232px;
+	min-width:140px;
 }
 .inner{
 	max-width:1200px;
@@ -45,18 +59,65 @@ header{
 header img{
 	width:20%;
 	left:5%;
-	bottom:-30%;;
+	bottom:-30%;
 	height:auto;
 	position:absolute;
 }
 header h1{
 	font-family: "mf";
 	padding:10% 0 0 30%;
-	font-size:4rem;
 }
 header h2{
-	padding:0 0 0 30%;
+	padding:2% 0 0 30%;
 	margin-bottom:10%;
-	font-size:3rem;
 	font-weight:800;
+}
+
+/* cardlist ------------------- */
+#cardlist{
+	overflow:hidden;
+	margin-top:8%;
+}
+#cardlist li{
+	float:left;
+	margin:10px;
+	width:180px;
+	height:240px;
+	border:1px solid #ededed;
+	border-radius:6px;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+}
+#cardlist li img{
+	width:140%;
+	display:block;
+	position:absolute;
+	right:0px;
+	top:-52%;
+	bottom:0px;
+	left:-20%;
+	margin:auto auto;
+	z-index:10;
+}
+#cardlist li:hover img{
+	transform: scale(1.2);
+	transition: transform 100ms;
+}
+#cardlist li img{
+	transform: scale(1);
+	transition: transform 100ms;
+}
+#cardlist li p{
+	position:absolute;
+	width:100%;
+	height:30%;
+	bottom:0;
+	background:black;
+	color:white;
+	z-index:20;
+}
+#cardlist li p span{
+	width:100%;
+	display:block;
 }
