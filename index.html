@@ -1,16 +1,34 @@
-﻿<!DOCTYPE html>
-<html><!-- InstanceBegin template="/Templates/subpage.dwt" codeOutsideHTMLIsLocked="false" -->
+<!DOCTYPE html>
+<html lang="ja" itemscope itemtype="http://schema.org/Product">
 <head>
-    
-    <meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">    
+<meta charset="UTF-8">
+<title>クラッシュロワイヤル 日本語データベース</title>
+	<meta name="description" content="説明がここに入ります。説明がここに入ります。">
+	<meta name="Keywords" content="クラッシュロワイヤル クラロワ 攻略 まとめ wiki">
+
+	<meta property="og:title" content="クラッシュロワイヤル 日本語データベース">
+	<meta property="og:site_name" content="クラッシュロワイヤル 日本語データベース">
+	<meta property="og:url" content="http://clash-royale.github.io/">
+	<meta property="og:description" content="クラッシュロワイヤル クラロワの日本語版データベースです。ユニットの詳細や戦術をまとめて掲載しています。">
+	<meta property="fb:app_id" content="[FB_APP_ID]">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="img/ogp.png">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@username">
+	<meta name="twitter:title" content="クラッシュロワイヤル 日本語データベース">
+	<meta name="twitter:description" content="クラッシュロワイヤル クラロワの日本語版データベースです。ユニットの詳細や戦術をまとめて掲載しています。">
+	<meta name="twitter:image:src" content="img/ogp.png">
+
+	<meta itemprop="name" content="クラッシュロワイヤル 日本語データベース">
+	<meta itemprop="description" content="クラッシュロワイヤル クラロワの日本語版データベースです。ユニットの詳細や戦術をまとめて掲載しています。">
+	<meta itemprop="image" content="img/ogp.png">
+
 	<link type="text/css" rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
   	<script type="text/javascript" src="js/default.js"></script>
-  	<title></title>
 </head>
-
 <body>
 	<header>
 		
@@ -20,13 +38,24 @@
 			<img src="img/ttl_01.png" />
 		</div>
 	</header>
-	<div class="logo"><img id="logo" src="img/logo.png" /></div>
+	<small class="logo">
+		<img src="img/logo.png" />
+	</small>
+	<article>
+		<ul id="cardlist">
+			<li><a href="#"><img src="img/card_pekka.png" /><p><span class="epic">Epic</span>P.E.K.K.A</p></a></li>
+			<li><a href="#"><img src="img/card_babydragon.png" /><p><span class="rare">Rare</span>BabyDragon</p></a></li>
+			<li><a href="#"><img src="img/card_minipekka.png" /><p><span class="rare">Rare</span>mini P.E.K.K.A</p></a></li>
+			<li><a href="#"><img src="img/card_prince.png" /><p><span class="epic">Epic</span>Prince</p></a></li>
+			<li><a href="#"><img src="img/card_gorem.png" /><p><span class="epic">Epic</span>Gorem</p></a></li>
+		</ul>
+		
+	</article>
 	
 	<script src="js/jquery.fittext.js"></script>
 	<script type="text/javascript">
-		$(".fittext1").fitText(1.9);
-		$(".fittext2").fitText(1.8);
-		$(".fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
+		$("h2").fitText(1.9);
+		$("h1").fitText(1.8);
 	</script>
 </body>
 
